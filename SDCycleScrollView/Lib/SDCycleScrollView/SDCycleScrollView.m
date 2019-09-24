@@ -514,6 +514,8 @@ NSString * const ID = @"SDCycleScrollViewCell";
     CGFloat x = (self.sd_width - size.width) * 0.5;
     if (self.pageControlAliment == SDCycleScrollViewPageContolAlimentRight) {
         x = self.mainView.sd_width - size.width - 10;
+    }else if (self.pageControlAliment==SDCycleScrollViewPageContolAlimentLeft){
+        x=10;
     }
     CGFloat y = self.mainView.sd_height - size.height - 10;
     
